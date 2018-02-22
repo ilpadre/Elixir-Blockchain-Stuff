@@ -2,10 +2,6 @@ defmodule Base58checkTest do
   use ExUnit.Case
   doctest Base58check
 
- #test <test name> do
-  #    do stuff
-  #  end */
-
   test "encode hello" do
     assert Base58check.encode("hello") == "Cn8eVZg"
   end

@@ -5,14 +5,6 @@ defmodule Base58check do
 
   @alphabet '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-
-
-  """
   def encode(data, hash \\ "")
   def encode(0, hash), do: hash
   def encode(data, hash) when is_binary(data) do
